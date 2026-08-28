@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirtika 💖</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh; font-family:Arial,sans-serif; overflow-x:hidden;
+  background:linear-gradient(135deg,#ffe4ec,#fff6f9,#f9e1ff);
+  color:#5b2940; display:flex; justify-content:center; padding:22px 14px;
+}
+.card{
+  width:min(430px,100%); background:rgba(255,255,255,.78); backdrop-filter:blur(10px);
+  border-radius:28px; padding:18px; box-shadow:0 15px 45px rgba(110,40,80,.18);
+  text-align:center; position:relative; z-index:2;
+}
+.photo{width:100%;border-radius:22px;display:block;box-shadow:0 8px 25px rgba(0,0,0,.16)}
+h1{font-size:36px;margin:18px 0 6px;color:#d44775}
+.subtitle{font-size:15px;margin-bottom:18px;color:#875268}
+.message{background:#fff0f5;border-radius:20px;padding:18px;font-size:20px;line-height:1.65;margin:15px 0}
+button{border:0;border-radius:999px;padding:13px 22px;font-size:16px;font-weight:bold;background:#e95583;color:white;box-shadow:0 7px 18px rgba(233,85,131,.3);cursor:pointer}
+button:active{transform:scale(.97)}
+.music{margin-top:18px;padding:15px;background:#fff;border-radius:18px}
+.music p{margin-bottom:10px;font-weight:bold}
+audio{width:100%}
+.heart{position:fixed;font-size:22px;animation:float 7s linear infinite;opacity:.75;z-index:1}
+@keyframes float{0%{transform:translateY(105vh) rotate(0);opacity:0}15%{opacity:.8}100%{transform:translateY(-10vh) rotate(360deg);opacity:0}}
+.small{font-size:12px;margin-top:14px;color:#9a6b7d}
+</style>
+</head>
+<body>
+<div class="heart" style="left:8%;animation-delay:0s">💗</div>
+<div class="heart" style="left:24%;animation-delay:2s">💕</div>
+<div class="heart" style="left:48%;animation-delay:4s">💖</div>
+<div class="heart" style="left:72%;animation-delay:1s">💗</div>
+<div class="heart" style="left:88%;animation-delay:3s">💕</div>
+
+<main class="card">
+  <img class="photo" src="306_site.png" alt="Kirtika ke liye photo">
+  <h1>Kirtika 💖</h1>
+  <div class="subtitle">Hii Kuchupuchhu 🌸</div>
+
+  <div class="message">
+    Hii kuchupuchhu sorry yarr 😔<br>
+    Baby yarrr please sorry yarr 🥺💗
+  </div>
+
+  <button onclick="showMsg()">Ek baar smile kar do 😊</button>
+  <p id="extra" style="display:none;margin-top:14px;font-size:17px;line-height:1.5;">Gussa thoda kam kar do na 😭💖</p>
+
+  <div class="music">
+    <p>🎵 Bairan — Music</p>
+    <audio controls preload="metadata">
+      <source src="bairan.mp3" type="audio/mpeg">
+      Tumhare folder me <b>bairan.mp3</b> file honi chahiye.
+    </audio>
+    <div class="small">Acode me music chalane ke liye apni legally obtained audio file ka naam <b>bairan.mp3</b> rakho aur isi folder me rakho.</div>
+  </div>
+</main>
+<script>
+function showMsg(){
+  document.getElementById('extra').style.display='block';
+}
+</script>
+</body>
+</html>
